@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt Hình Vui - Xem hoạt hình trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">🎬 Hoạt Hình Vui</div>
+        <nav class="head-link">
+            <a href="#home">Trang chủ</a>
+            <a href="#videos">Danh sách phim</a>
+            <a href="#footer">Liên hệ</a>
+        </nav>
+    </header>
+
+    <main id="home" class="container">
+
+        <aside id="videos" class="left-content">
+            <h2>Danh sách phim</h2>
+
+            <input type="search" id="search" placeholder="Tìm kiếm phim..." aria-label="Tìm kiếm phim">
+
+            <select id="sort" aria-label="Sắp xếp phim">
+                <option value="newest">Mới cập nhật</option>
+                <option value="views">Nhiều lượt xem</option>
+            </select>
+
+            <div id="video-list"></div>
+        </aside>
+
+        <section class="right-content">
+            <h2 id="video-title">Chọn phim để xem</h2>
+            <p id="video-info"></p>
+
+            <div id="player" class="player">
+                <video controls preload="metadata">
+                    <source src="" type="video/mp4">
+                    Trình duyệt không hỗ trợ video.
+                </video>
+            </div>
+
+            <h3>Giới thiệu</h3>
+            <p id="video-description">
+                Chọn phim trong danh sách bên trái để bắt đầu.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <p>© 2026 Hoạt Hình Vui - Bài thực hành HTML CSS</p>
+        <p>Nội dung video dùng cho mục đích học tập.</p>
+    </footer>
+
+</body>
+
+</html>
